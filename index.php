@@ -11,7 +11,7 @@
   if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
-  echo "Connected successfully";
+  echo "Database Connected successfully";
 
   $sql = "SELECT FirstName, LastName, Email, PhoneNo, Address1, Address2  FROM members";
   $result = $conn->query($sql);
